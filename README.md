@@ -172,12 +172,3 @@ GPT responds with:
 
 ---
 
-## Interview Talking Points
-
-1. **Why OpenAI over a simple formula?** AI can factor in nuanced signals — category trends, product positioning, seasonal demand patterns — that a hardcoded formula can't.
-
-2. **Why a rule engine on top of AI?** AI recommendations can't be fully trusted with financial decisions. Rule engine provides guardrails to prevent pricing below cost.
-
-3. **Jsoup vs headless browser?** Jsoup is lightweight for static HTML. For JS-rendered pages (React storefronts), Playwright/Selenium would be needed — designed as a pluggable interface.
-
-4. **Rate limiting crawls?** In production, add Resilience4j rate limiter per competitor + respect robots.txt + add proxy rotation.
