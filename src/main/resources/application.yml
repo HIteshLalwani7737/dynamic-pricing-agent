@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: dynamic-pricing-agent
+  datasource:
+    url: jdbc:h2:mem:pricingdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+openai:
+  api:
+    key: ${OPENAI_API_KEY:sk-your-key-here}
+  model: gpt-4o-mini
+
+pricing:
+  schedule:
+    interval-ms: 1800000  # 30 minutes
